@@ -1,0 +1,58 @@
+
+.servicesContainer{
+    width: 90%;
+    margin: 30px auto;
+}
+.servicesTabWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.servicesTab{
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 90px;
+    border-radius: 10px 0;
+    background: #333 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.servicesTab:hover{
+    background: rgb(102, 226, 102);
+
+}
+.servicesTab:hover .servicesLogo{
+    color: rgb(87, 255, 87);
+    background: white;
+}
+.servicesLogo{
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.5rem;
+    background: rgb(87, 255, 87);
+    box-shadow: -6px -7px 0 rgb(116, 116, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+.servicesHeader{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.servicesFeaures{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}

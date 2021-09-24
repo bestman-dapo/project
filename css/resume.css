@@ -1,0 +1,118 @@
+
+.resumeContainer{
+    width: 80%;
+    margin: 30px auto;
+}
+.resumeHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-bottom: 30px;
+}
+.resumeHeaderText{
+    font-weight: 600;
+    color: grey;
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+}
+.mainResume{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.mainResume li{
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 30px;
+}
+.mainResume li:before{
+    content:"·";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    font-size:120px;
+    color: green;
+    vertical-align:middle;
+    line-height:20px;
+}
+
+.academicResume{
+    width: 50%;
+    padding-right: 80px;
+}
+
+.academicResumeHeader{
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.academicTitle{
+    color: green;
+    margin-bottom: 10px;
+}
+.academicYear1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background: rgba(146, 255, 152, 0.4);
+}
+.academicYear2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    background: rgba(146, 255, 152, 0.4);
+}
+.academicInstitute{
+    font-style: italic;
+    margin-bottom: 25px;
+}
+.academicDescription{
+    line-height: 1.6rem;
+}
+.ProfessionalExperience{
+    width: 50%;
+    padding-right: 80px;
+}
+.ProfessionalExperienceHeader{
+    color: #222;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width:800px) {
+    .mainResume{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .academicResume{
+        width: 100%;
+        padding-right: 0;
+    }
+    .academicResumeHeader{
+        color: #333;
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+    .ProfessionalExperience{
+        width: 90%;
+        padding-right: 0;
+    }
+    .ProfessionalExperienceHeader{
+        color: #222;
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+}
